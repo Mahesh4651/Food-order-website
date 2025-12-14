@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Order Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🍕 Online Food Order</h1>
+</header>
+
+<section class="food-list">
+  <div class="food">
+    <img src="image/pizza.jpeg">
+    <h3>Pizza</h3>
+    <p>₹250</p>
+    <button onclick="addToCart('Pizza',250)">Add to Cart</button>
+  </div>
+
+  <div class="food">
+    <img src="image/burger.png">
+    <h3>Burger</h3>
+    <p>₹150</p>
+    <button onclick="addToCart('Burger',150)">Add to Cart</button>
+  </div>
+   <div class="food">
+    <img src="image/mojito.png">
+    <h3>Mojito</h3>
+    <p>₹50</p>
+    <button onclick="addToCart('Burger',50)">Add to Cart</button>
+  </div>
+</section>
+
+<section class="cart">
+  <h2>🛒 Cart</h2>
+  <ul id="cartItems"></ul>
+  <button onclick="placeOrder()">Place Order</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

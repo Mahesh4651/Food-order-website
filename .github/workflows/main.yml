@@ -3,7 +3,7 @@ name: Online Food Website Deployment
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
